@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone-Papers-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body > 
+    <div id="container">
+        <h1 class="heading" >Stone Papers Scissors Game</h1>
+        <div class="choices">
+            <div class="choice">
+                <img onclick="playerChoice('stone')" id="img1" src="rock2.jpg" alt="rock" >
+            </div>
+            <div class="choice">
+                <img onclick="playerChoice('paper')" id="img2" src="paper2.jpg" alt="paper" >
+            </div>
+            <div class="choice">
+            <img onclick="playerChoice('scissors')" id="img3" src="scissors2.jpg" alt="scissors" >
+            </div>
+        </div>
+
+        <div id ="result">
+            <strong>Choose Stone, Paper or Scissors</strong>
+        </div>
+
+        <div class="score">
+            <table id="score-board">
+            <tr>
+                <th>Your score</th>
+                <th>Computer score</th>
+            </tr>
+            <tr>
+                <td ><p id='user-win'>0</p></td>
+                <td ><p id='comp-win'>0</p></td>
+            </tr>
+
+            </table>
+        </div>
+        <div class="button" >
+            <button class="reset-game" onclick="resetGame()" hidden>Reset</button>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="script.js" ></script>
+</html>
